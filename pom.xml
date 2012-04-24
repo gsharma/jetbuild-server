@@ -155,6 +155,16 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.google.code.morphia</groupId>
+      <artifactId>morphia</artifactId>
+      <version>0.99</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.morphia</groupId>
+      <artifactId>morphia-logging-slf4j</artifactId>
+      <version>0.99</version>
+    </dependency>
+    <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.5</version>
@@ -196,6 +206,10 @@
     <repository>
       <id>sonatype</id>
       <url>https://oss.sonatype.org/content/repositories/releases/</url>
+    </repository>
+    <repository>
+      <id>morphia</id>
+      <url>http://morphia.googlecode.com/svn/mavenrepo/</url>
     </repository>
   </repositories>
 
