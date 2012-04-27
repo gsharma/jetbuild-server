@@ -45,6 +45,7 @@ public class MongoUtil {
                 mongoOptions.safe = true;
                 mongo = new Mongo(toSeeds(serverAddresses), mongoOptions);
             } else {
+                mongoOptions = new MongoOptions();
                 mongoOptions.safe = true;
                 mongo = new Mongo(toSeeds(serverAddresses), mongoOptions);
             }

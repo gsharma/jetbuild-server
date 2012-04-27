@@ -1,5 +1,7 @@
 package com.jetbuild.social.stream;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
@@ -8,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
+import com.jetbuild.social.model.Account;
+import com.jetbuild.social.model.Comment;
 import com.jetbuild.social.util.MongoUtil;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -47,5 +51,41 @@ public class StreamDAOImpl implements StreamDAO {
         String getField() {
             return field;
         }
+    }
+
+    @Override
+    public Comment createComment(Comment comment) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Comment createReply(Comment comment) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Comment> retrieveCommentsByUsername(String username) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Comment> retrieveInboxByAccount(Account account) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Comment> retrieveMentionsByUsername(String username) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Comment> retrieveThreadById(String threadId) {
+        // TODO Auto-generated method stub
+        return null;
     }
 }

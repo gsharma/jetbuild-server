@@ -1,5 +1,7 @@
 package com.jetbuild.social.account;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import com.jetbuild.social.model.Account;
 import com.jetbuild.social.util.MongoUtil;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -47,5 +50,45 @@ public class AccountDAOImpl implements AccountDAO {
         String getField() {
             return field;
         }
+    }
+
+    @Override
+    public Account createAccount(Account account) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Account retrieveAccountById(String accountId) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Account retrieveAccountByUsername(String username) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Account> retrieveAllAccountsByUsername(String username) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Account updateAccount(Account account) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void deleteAccount(Account account) {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public void deleteAccountById(String accountId) {
+        // TODO Auto-generated method stub
     }
 }
