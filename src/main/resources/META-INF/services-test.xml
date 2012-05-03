@@ -27,8 +27,8 @@
 
   <util:properties id="masterConfigurationProperties">
     <prop key="mongo.db.name">jetbuild</prop>
-    <prop key="mongo.db.user"></prop>
-    <prop key="mongo.db.password"></prop>
+    <prop key="mongo.db.user" />
+    <prop key="mongo.db.password" />
   </util:properties>
 
 </beans>
